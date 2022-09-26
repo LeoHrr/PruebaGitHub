@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var ingreso = "Seleccione una opción: \n" +
+	"1. Ingresar Nombre de usuario\n " + 
+	"2. Ingresar email\n" + 
+	"3. Ingresar edad\n" + 
+	"4. Mostrar nombre y edad\n" + 
+	"0. Salir del menú \n";
+
+    
+    do{
+    cod=parseInt(prompt(ingreso));
+
+    switch(cod){
+        case 1: document.write("1. Ingresar Nombre de usuario<br>");
+        let username;
+        username = prompt("Ingresar Nombre de usuario")
+            if(username.length >= 5 && username.length <= 10){
+                document.write("El usuario es válido",'<br>');
+            }else {
+                document.write("El usuario no es valido", '<br>');
+            }
+        break;
+        case 2: document.write("2. Ingresar email<br>");
+        let email;
+        email = prompt("Ingresar email");
+        if(email.includes("@") && email.includes(".com") && email != "@.com" ){
+                document.write("Email valido", '<br>');
+            } else{
+                document.write("Email no valido", '<br>');
+            }
+        break;
+        case 3: document.write("3. Ingresar edad<br>");
+        let edad;
+        edad= prompt("Ingresa tu edad:");
+        if (parseInt(edad) <=100){
+            document.write("Edad ingresada", '<br>');
+        } else {
+            document.write("Edad no valida" , '<br>');
+        }
+        break;
+        case 4: document.write("4. Mostrar nombre y edad<br>");
+
+        username= parseInt(username);
+        edad= parseInt(edad);
+
+        document.write("tu nombre de usuario es",username,"y tienes",edad," de edad","<br>");
+        break;
+        case 5: document.write("0. Salir del menú<br>");
+        break;
+    }
+    } while(cod !=0)
+
+    
+    </script>
+</body>
+</html>

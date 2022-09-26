@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ingreso;
+        {do {
+            ingreso = parseInt(prompt("Ingrese una opción del menú:"));
+            document.write("1. Ingresar nombre de usuario",'<br>');
+            document.write("2. Ingresar email", '<br>');
+            document.write("3. Ingresar edad", '<br>');
+            document.write("4. Mostrar nombre de usuario y edad", '<br>');
+            document.write("5. Salir", '<br>');
+
+            document.write("Ingreso la opción", ingreso, '<br>');
+        } while(ingreso !=1 )
+        function validarusername(username){
+            if(username.length >= 5 && username.length <= 10){
+                document.write("El usuario es válido",'<br>');
+            }else {
+                document.write("El usuario no es valido", '<br>');
+            }
+        }
+        let username = prompt("Ingrese su usuario");
+        validarusername(username);
+    }
+    {
+        let ingreso;
+        do {
+            ingreso = parseInt(prompt("Ingrese una opción del menú:"));
+            document.write("1. Ingresar nombre de usuario",'<br>');
+            document.write("2. Ingresar email", '<br>');
+            document.write("3. Ingresar edad", '<br>');
+            document.write("4. Mostrar nombre de usuario y edad", '<br>');
+            document.write("5. Salir", '<br>');
+
+            document.write("Ingreso la opción", ingreso, '<br>');
+        } while(ingreso !=2)
+        function validaremail(email){
+            if(email.includes("@") && email.includes(".com") && email != "@.com" ){
+                document.write("Email valido", '<br>');
+            } else{
+                document.write("Email no valido", '<br>');
+            }
+
+        }
+        let email = prompt("Ingrese su Email");
+        validaremail(email);
+     }
+     {
+        let ingreso;
+        do {
+            ingreso = parseInt(prompt("Ingrese una opción del menú:"));
+            document.write("1. Ingresar nombre de usuario",'<br>');
+            document.write("2. Ingresar email", '<br>');
+            document.write("3. Ingresar edad", '<br>');
+            document.write("4. Mostrar nombre de usuario y edad", '<br>');
+            document.write("5. Salir", '<br>');
+
+            document.write("Ingreso la opción", ingreso, '<br>');
+        } while(ingreso !=3)
+        let edad;
+        edad= prompt("Ingresa tu edad:");
+        if (parseInt(edad) >= 18 ){
+            document.write("Sos mayor de edad", '<br>');
+        } else {
+            document.write("No sos mayor de edad" , '<br>');
+        }
+     }
+     {
+        let ingreso;
+        do {
+            ingreso = parseInt(prompt("Ingrese una opción del menú:"));
+            document.write("1. Ingresar nombre de usuario",'<br>');
+            document.write("2. Ingresar email", '<br>');
+            document.write("3. Ingresar edad", '<br>');
+            document.write("4. Mostrar nombre de usuario y edad", '<br>');
+            document.write("5. Salir", '<br>');
+
+            document.write("Ingreso la opción", ingreso, '<br>');
+        } while(ingreso !=4)
+        let username;
+        let edad ;
+        document.write(username)
+        document.write('<br>')
+        document.write(edad)
+        document.write('<br>')
+     }
+     {
+        let ingreso;
+        do {
+            ingreso = parseInt(prompt("Ingrese una opción del menú:"));
+            document.write("1. Ingresar nombre de usuario",'<br>');
+            document.write("2. Ingresar email", '<br>');
+            document.write("3. Ingresar edad", '<br>');
+            document.write("4. Mostrar nombre de usuario y edad", '<br>');
+            document.write("5. Salir", '<br>');
+
+            document.write("Ingreso la opción", ingreso, '<br>');
+        } while(ingreso !=5)
+        document.write ("Eligió salir del menú")
+      }  
+    </script>
+</body>
+</html>
